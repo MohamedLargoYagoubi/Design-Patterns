@@ -1,5 +1,5 @@
 <p align="center">
-  <img width=100% src="https://creativeclickmedia.com/wp-content/uploads/2018/04/wireframe-box-270x203.jpg" /> 
+  <img width=100% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/banner.gif" /> 
 </p>
 
 <h1 align="center">INTRODUCCIÓN</h1>
