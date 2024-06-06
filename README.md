@@ -57,14 +57,13 @@
 
 <h1 align="center">ÍNDICE</h1>
 
-1. [Lorem Ipsum](#1-lorem-ipsum).
-2. Lorem Ipsum
-3. Lorem Ipsum
-    1. Lorem Ipsum
-    2. Lorem Ipsum
-        1. Lorem Ipsum
-    4. Lorem Ipsum
-5. Lorem Ipsum
+1. [Introducción](#1-introducción).
+    1. [Historia](#11---historia).
+    2. [Definición](#12---definición).
+    3. [Clasificación](#13---clasificación).
+2. [Patrones creacionales](#2-patrones-creacionales).
+3. [Patrones estructurales](#3-patrones-estructurales).
+4. [Patrones de comportamiento](#4-patrones-de-comportamiento).
 
 
 # 1. INTRODUCCIÓN
@@ -73,165 +72,55 @@
 
 ## 1.1 - Historia 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+TODO
 
 ## 1.2 - Definición 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+TODO
 
 ## 1.3 - Clasificación 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+TODO
 
-# 1. LOREM
-
-<hr />
-
-<img width="200" height="100" src="https://creativeclickmedia.com/wp-content/uploads/2018/04/wireframe-box-270x203.jpg" align=right>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-## 1.1 - Lorem
-
-<img width="200" height="120" src="https://creativeclickmedia.com/wp-content/uploads/2018/04/wireframe-box-270x203.jpg" align=left>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-
-## 1.2 - Lorem 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-
-<p align="center">
-  <img width="400" height="150" src="https://creativeclickmedia.com/wp-content/uploads/2018/04/wireframe-box-270x203.jpg" />
-</p>
-
-
-## 1.3 - Lorem
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-
-## 1.4 - LOREM IPSUM
-
-<div align="center">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-</div>
-
-## 1.5 - LOREM IPSUM
-
-<div align="right">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-</div>
-
-# 2 - LOREM IPSUM 
+# 2. PATRONES CREACIONALES
 
 <hr />
 
-> <img src="https://github.com/MohamedLargoYagoubi/images/blob/main/reto.gif" width="30" align=left> <h3> - Ejercicio </h3> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n </p>
-
-> <img src="https://github.com/MohamedLargoYagoubi/images/blob/main/recordar.gif" width="30" align=left> <h3> - Nota </h3> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n </p>
-
-
-> <details> <summary> <img src="https://github.com/MohamedLargoYagoubi/images/blob/main/solucion.gif" width="30" > <h3> - Solución </h3> </summary> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n </p>
-</details>
-
-
-# 3 - LOREM IPSUM 
-
-<hr />
-
-| C1 | C2 | C3 |
+| Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| CF1 | CF2 | CF3 |
-| CF4 | CF5 | CF6 |
+| <b><a href="google.com">Builder</a></b> | 🚧 | Permite construir objetos complejos ocultando la complejidad de su estructura interna. |
+| <b><a href="google.com">Factory Method</a></b> | 🚧 | Proporciona una interfaz para crea objetos en una superclase, que delega a sus subclases la creación de objetos. |
+| <b><a href="google.com">Abstract Factory</a></b> | 🚧 | Mediante una interface permite producir familias de objetos relacionados sin especificar sus clases concretas. |
+| <b><a href="google.com">Singleton</a></b> | 🚧 | Permite asegurarnos de que una clase sólo tenga una única instancia, y proporciona un punto de acceso global a dicha instancia. |
+| <b><a href="google.com">Prototype</a></b> | 🚧 | 🚧 |
 
-| C1 | C2 | C3 |
+# 3. PATRONES ESTRUCTURALES
+
+<hr />
+
+| Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| CF1 | CF2 | <table>  <thead>  <tr>  <th> C3.1 </th> <th> C3.2 </th>  <th> C3.3 </th>   </tr>  </thead>  <tbody> <tr>  <td align="center"> A </td>   <td align="center"> B </td>  <td align="center"> C </td>  </tr>  <tr>  <td align="center"> 1 </td>   <td align="center"> 2 </td>  <td align="center"> 3 </td>  </tr> </tbody>  </table> |
+| <b><a href="google.com">Adapter</a></b> | 🚧 | Permite la cooperación entre objetos con interfaces incompatibles. |
+| <b><a href="google.com">Composite</a></b> | 🚧 | Permite componer objetos en estructura de árbol y tratar de manera uniforme tanto a los objetos individuales como a los compuestos.  |
+| <b><a href="google.com">Bridge</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">Facade</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">Decorator</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">Proxy</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">Flyweight</a></b> | 🚧 | 🚧 |
 
-# 4 - LOREM IPSUM 
-
-<hr />
-
-**JAVA**
-
- ```java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-**PYTHON**
-
- ```python
-print("Hello, World!")
-
-```
-
-**HTML**
-
- ```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello, World!</title>
-</head>
-<body>
-
-    <h1>Hello, World!</h1>
-
-</body>
-</html>
-
-```
-
-**CODE**
-
-`GENERIC BOX`
-
-
-# 5 - LOREM IPSUM 
+# 4. PATRONES DE COMPORTAMIENTO
 
 <hr />
 
-- [x] Check Box
-- [ ] Not checkbox
-1. First item
-2. Second item
-3. Third item
-- First item
-- Second item
-- Third item
+| Nombre del patrón | Imagen | Descripción |
+| :-: | :-: | :-: |
+| <b><a href="google.com">Observer</a></b> | 🚧 | Permite notificar cuando un objeto cambia a varios objetos para que se notifiquen y actualicen. |
+| <b><a href="google.com">Template Method</a></b> | 🚧 | Define un esqueleto de un algoritmo en la superclase, delegando a las subclases la posibilidad de que puedan sobrescribir pasos del algoritmo sin cambiar su estructura. |
+| <b><a href="google.com">Strategy</a></b> | 🚧 | Permite recorrer secuencialmente elementos de una colección si exponer su representació interna. |
+| <b><a href="google.com">Visitor</a></b> | 🚧 | Permite separar algoritmos de los objetos sobre los que operan. |
+| <b><a href="google.com">Chain of Responsibility</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">Mediator</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">Command</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">Memento</a></b> | 🚧 | 🚧 |
+| <b><a href="google.com">State</a></b> | 🚧 | 🚧 |
 
-
-
-# 6 - LOREM IPSUM 
-
-<hr />
-
-# H1
-## H2
-### H3
-**Blod**
-
-*italic*
-
-
-# 7 - LOREM IPSUM 
-
-<hr />
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
