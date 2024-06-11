@@ -6,7 +6,7 @@
 
 <div align="center">
   <b>
-    Permite recorrer secuencialmente elementos de una colección si exponer su representació interna.
+    Permite recorrer secuencialmente elementos de una colección sin exponer su representación interna.
   </b>
 </div>
 

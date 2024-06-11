@@ -116,7 +116,7 @@ TODO
 | :-: | :-: | :-: |
 | <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/observer">Observer</a></b> | 🚧 | Permite notificar cuando un objeto cambia a varios objetos para que se notifiquen y actualicen. |
 | <b>Template Method</b> | 🚧 | Define un esqueleto de un algoritmo en la superclase, delegando a las subclases la posibilidad de que puedan sobrescribir pasos del algoritmo sin cambiar su estructura. |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/iterator">Iterator</a>r</b> | 🚧 | Permite recorrer secuencialmente elementos de una colección si exponer su representació interna. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/iterator">Iterator</a></b> | 🚧 | Permite recorrer secuencialmente elementos de una colección sin exponer su representación interna. |
 | <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/visitor">Visitor</a></b> | 🚧 | Permite separar algoritmos de los objetos sobre los que operan. |
 | <b>Chain of Responsibility</b> | 🚧 | 🚧 |
 | <b>Mediator</b> | 🚧 | 🚧 |
