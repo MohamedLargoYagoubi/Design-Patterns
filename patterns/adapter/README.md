@@ -16,7 +16,13 @@
 
 ## 1.1 - Diagrama UML
 
-TODO
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
 
 ## 1.2 - Explicación 
 
