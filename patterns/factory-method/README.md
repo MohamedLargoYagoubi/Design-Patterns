@@ -2,12 +2,11 @@
   <img width=100% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/banner.gif" /> 
 </p>
 
-<h1 align="center">OBSERVER</h1>
+<h1 align="center">FACTORY METHOD</h1>
 
 <div align="center">
   <b>
-    Este repositorio ha sido creado con el objetivo de proporcionar una introducción comprensible y práctica a los patrones de diseño utilizando el lenguaje de programación Java. Definiremos el concepto de patrón de diseño, su historia, las distintas clasificaciones, definiciones, ejemplos de código y explicaciones detalladas sobre cómo y cuándo usarlos, teniendo en cuenta los beneficios y inconvenientes resultantes. ¡Feliz aprendizaje!
-  </b>
+    Proporciona una interfaz para crear objetos en una superclase, que delega a sus subclases la creación de objetos.  </b>
 </div>
 
 <hr />

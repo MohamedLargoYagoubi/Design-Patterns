@@ -6,8 +6,7 @@
 
 <div align="center">
   <b>
-    Este repositorio ha sido creado con el objetivo de proporcionar una introducción comprensible y práctica a los patrones de diseño utilizando el lenguaje de programación Java. Definiremos el concepto de patrón de diseño, su historia, las distintas clasificaciones, definiciones, ejemplos de código y explicaciones detalladas sobre cómo y cuándo usarlos, teniendo en cuenta los beneficios y inconvenientes resultantes. ¡Feliz aprendizaje!
-  </b>
+    Permite notificar cuando un objeto cambia a varios objetos para que se notifiquen y actualicen.  </b>
 </div>
 
 <hr />

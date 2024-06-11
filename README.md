@@ -88,11 +88,11 @@ TODO
 
 | Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| <b><a href="google.com">Builder</a></b> | 🚧 | Permite construir objetos complejos ocultando la complejidad de su estructura interna. |
-| <b><a href="google.com">Factory Method</a></b> | 🚧 | Proporciona una interfaz para crea objetos en una superclase, que delega a sus subclases la creación de objetos. |
-| <b><a href="google.com">Abstract Factory</a></b> | 🚧 | Mediante una interface permite producir familias de objetos relacionados sin especificar sus clases concretas. |
-| <b><a href="google.com">Singleton</a></b> | 🚧 | Permite asegurarnos de que una clase sólo tenga una única instancia, y proporciona un punto de acceso global a dicha instancia. |
-| <b><a href="google.com">Prototype</a></b> | 🚧 | 🚧 |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/builder">Builder</a></b> | 🚧 | Permite construir objetos complejos ocultando la complejidad de su estructura interna. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/factory-method">Factory Method</a></b> | 🚧 | **Proporciona una interfaz para crear objetos en una superclase, que delega a sus subclases la creación de objetos.** |
+| <b>Abstract Factory</b> | 🚧 | Mediante una interface permite producir familias de objetos relacionados sin especificar sus clases concretas. |
+| <b>Singleton</b> | 🚧 | Permite asegurarnos de que una clase sólo tenga una única instancia, y proporciona un punto de acceso global a dicha instancia. |
+| <b>Prototype</b> | 🚧 | 🚧 |
 
 # 3. PATRONES ESTRUCTURALES
 
@@ -100,13 +100,13 @@ TODO
 
 | Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| <b><a href="google.com">Adapter</a></b> | 🚧 | Permite la cooperación entre objetos con interfaces incompatibles. |
-| <b><a href="google.com">Composite</a></b> | 🚧 | Permite componer objetos en estructura de árbol y tratar de manera uniforme tanto a los objetos individuales como a los compuestos.  |
-| <b><a href="google.com">Bridge</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">Facade</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">Decorator</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">Proxy</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">Flyweight</a></b> | 🚧 | 🚧 |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/adapter">Adapter</a></b> | 🚧 | Permite la cooperación entre objetos con interfaces incompatibles. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/composite">Composite</a></b> | 🚧 | Permite componer objetos en estructura de árbol y tratar de manera uniforme tanto a los objetos individuales como a los compuestos.  |
+| <b>Bridge</b> | 🚧 | 🚧 |
+| <b>Facade</b> | 🚧 | 🚧 |
+| <b>Decorator</b> | 🚧 | 🚧 |
+| <b>Proxy</b> | 🚧 | 🚧 |
+| <b>Flyweight</b> | 🚧 | 🚧 |
 
 # 4. PATRONES DE COMPORTAMIENTO
 
@@ -114,13 +114,13 @@ TODO
 
 | Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| <b><a href="google.com">Observer</a></b> | 🚧 | Permite notificar cuando un objeto cambia a varios objetos para que se notifiquen y actualicen. |
-| <b><a href="google.com">Template Method</a></b> | 🚧 | Define un esqueleto de un algoritmo en la superclase, delegando a las subclases la posibilidad de que puedan sobrescribir pasos del algoritmo sin cambiar su estructura. |
-| <b><a href="google.com">Strategy</a></b> | 🚧 | Permite recorrer secuencialmente elementos de una colección si exponer su representació interna. |
-| <b><a href="google.com">Visitor</a></b> | 🚧 | Permite separar algoritmos de los objetos sobre los que operan. |
-| <b><a href="google.com">Chain of Responsibility</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">Mediator</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">Command</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">Memento</a></b> | 🚧 | 🚧 |
-| <b><a href="google.com">State</a></b> | 🚧 | 🚧 |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/observer">Observer</a></b> | 🚧 | Permite notificar cuando un objeto cambia a varios objetos para que se notifiquen y actualicen. |
+| <b>Template Method</b> | 🚧 | Define un esqueleto de un algoritmo en la superclase, delegando a las subclases la posibilidad de que puedan sobrescribir pasos del algoritmo sin cambiar su estructura. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/iterator">Iterator</a>r</b> | 🚧 | Permite recorrer secuencialmente elementos de una colección si exponer su representació interna. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/visitor">Visitor</a></b> | 🚧 | Permite separar algoritmos de los objetos sobre los que operan. |
+| <b>Chain of Responsibility</b> | 🚧 | 🚧 |
+| <b>Mediator</b> | 🚧 | 🚧 |
+| <b>Command</b> | 🚧 | 🚧 |
+| <b>Memento</b> | 🚧 | 🚧 |
+| <b>State</b> | 🚧 | 🚧 |
 
