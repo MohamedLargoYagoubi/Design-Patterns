@@ -21,6 +21,7 @@ classDiagram
 
 
 class Component{
+    <<Interface>> 
     +operation()
 }
 
@@ -30,13 +31,13 @@ class Leaf{
 
 class Composite{
     +operation()
-    +add(Component)
+    +add()
 }
 
-Component <|-- Leaf
-Component <|-- Composite
+Component <|.. Leaf
+Component <|.. Composite
 
-Composite o--> "*" Component
+Composite --> "*" Component
 
 
 ```
@@ -47,26 +48,62 @@ Composite o--> "*" Component
 
 
 ### Paso 1
-Definimos la clase **abstracta y pública** llamada 'Component' con sus respectivos métodos:
+Definimos  **interface pública** llamada 'Component' con su respectivo método:
 ```java
-public abstract class Component {
+public interface Component {
+    void operation()
+}
+```
+
+> Leaf.java
+
+### Paso 2
+Definimos la **clase pública** llamada 'Leaf' y hacemos que implemente la interface 'Component':
+```java
+public class Leaf implements Component {
     //...
 }
 ```
 
-### Paso 2
-Definimos la clase **abstracta y pública** llamada 'Component' con sus respectivos métodos:
+### Paso 3
+Sobrescribimos el **método público** a implementar:
 ```java
-public abstract class Component {
-    public String price();
+public class Leaf implements Component {
+    @Override
+    public void operation(){
+      System.out.println("Leaf operation");
+    }
 }
 ```
 
-> ConcreteProductA.java
+> Composite.java
 
-> ConcreteProductB.java
+### Paso 4
+Definimos la **clase pública** llamada 'Composite' y hacemos que implemente la interface 'Component':
+```java
+public class Composite implements Component {
+    //...
+}
+```
 
-> ConcreteProductC.java
+### Paso 5
+Como tenemos una multiplicidad indeterminada, por lo tanto habrá que almacenar todas las intancias creadas de 'Component' en una lista:
+```java
+public class Composite implements Component {
+    private List<Component> components = new ArrayList<>();
+    //...
+}
+```
+
+
+### Paso 6
+Implementamos un **método público** que permita añadir componentes al compuesto (pueden ser de la clase 'Composite' o 'Leaf':
+```java
+public class Composite implements Component {
+    private List<Component> components = new ArrayList<>();
+    //...
+}
+```
 
 ### Paso 2
 Hacemos que cada producto concreto implemente la interface anterior y su respectivo método:
