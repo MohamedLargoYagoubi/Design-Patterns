@@ -88,8 +88,8 @@ TODO
 
 | Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/builder">Builder</a></b> | <img width=50% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/builder.png" /> | Permite construir objetos complejos ocultando la complejidad de su estructura interna. |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/factory-method">Factory Method</a></b> | <img width=50% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/factory.png" /> | **Proporciona una interfaz para crear objetos en una superclase, que delega a sus subclases la creación de objetos.** |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/builder">Builder</a></b> | <img width=10% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/builder.png" /> | Permite construir objetos complejos ocultando la complejidad de su estructura interna. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/factory-method">Factory Method</a></b> | <img width=10% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/factory.png" /> | **Proporciona una interfaz para crear objetos en una superclase, que delega a sus subclases la creación de objetos.** |
 | <b>Abstract Factory</b> | 🚧 | Mediante una interface permite producir familias de objetos relacionados sin especificar sus clases concretas. |
 | <b>Singleton</b> | 🚧 | Permite asegurarnos de que una clase sólo tenga una única instancia, y proporciona un punto de acceso global a dicha instancia. |
 | <b>Prototype</b> | 🚧 | 🚧 |
@@ -100,8 +100,8 @@ TODO
 
 | Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/adapter">Adapter</a></b> | <img width=50% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/adapter.png" /> | Permite la cooperación entre objetos con interfaces incompatibles. |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/composite">Composite</a></b> | <img width=50% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/composite.png" /> | Permite componer objetos en estructura de árbol y tratar de manera uniforme tanto a los objetos individuales como a los compuestos.  |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/adapter">Adapter</a></b> | <img width=10% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/adapter.png" /> | Permite la cooperación entre objetos con interfaces incompatibles. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/composite">Composite</a></b> | <img width=10% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/composite.png" /> | Permite componer objetos en estructura de árbol y tratar de manera uniforme tanto a los objetos individuales como a los compuestos.  |
 | <b>Bridge</b> | 🚧 | 🚧 |
 | <b>Facade</b> | 🚧 | 🚧 |
 | <b>Decorator</b> | 🚧 | 🚧 |
@@ -114,10 +114,10 @@ TODO
 
 | Nombre del patrón | Imagen | Descripción |
 | :-: | :-: | :-: |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/observer">Observer</a></b> | <img width=50% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/observer.png" /> | Permite notificar cuando un objeto cambia a varios objetos para que se notifiquen y actualicen. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/observer">Observer</a></b> | <img width=10% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/observer.png" /> | Permite notificar cuando un objeto cambia a varios objetos para que se notifiquen y actualicen. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/iterator">Iterator</a></b> | <img width=10% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/iterator.png" /> | Permite recorrer secuencialmente elementos de una colección sin exponer su representación interna. |
+| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/visitor">Visitor</a></b> | <img width=10% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/visitor.png" /> | Permite separar algoritmos de los objetos sobre los que operan. |
 | <b>Template Method</b> | 🚧 | Define un esqueleto de un algoritmo en la superclase, delegando a las subclases la posibilidad de que puedan sobrescribir pasos del algoritmo sin cambiar su estructura. |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/iterator">Iterator</a></b> | <img width=50% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/iterator.png" /> | Permite recorrer secuencialmente elementos de una colección sin exponer su representación interna. |
-| <b><a href="https://github.com/MohamedLargoYagoubi/Design-Patterns/tree/main/patterns/visitor">Visitor</a></b> | <img width=50% src="https://github.com/MohamedLargoYagoubi/Design-Patterns/blob/main/media/icons/visitor.png" /> | Permite separar algoritmos de los objetos sobre los que operan. |
 | <b>Chain of Responsibility</b> | 🚧 | 🚧 |
 | <b>Mediator</b> | 🚧 | 🚧 |
 | <b>Command</b> | 🚧 | 🚧 |
