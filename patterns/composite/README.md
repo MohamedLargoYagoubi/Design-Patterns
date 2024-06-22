@@ -87,10 +87,13 @@ public class Composite implements Component {
 ```
 
 ### Paso 5
-Como tenemos una multiplicidad indeterminada, por lo tanto habrá que almacenar todas las intancias creadas de 'Component' en una lista:
+Como tenemos una multiplicidad indeterminada habrá que almacenar todas las intancias creadas de 'Component' en una lista:
 ```java
 public class Composite implements Component {
-    private List<Component> components = new ArrayList<>();
+    private List<Component> components;
+    public Component(){
+      this.components = new ArrayList<>();
+    }
     //...
 }
 ```
@@ -100,102 +103,56 @@ public class Composite implements Component {
 Implementamos un **método público** que permita añadir componentes al compuesto (pueden ser de la clase 'Composite' o 'Leaf':
 ```java
 public class Composite implements Component {
-    private List<Component> components = new ArrayList<>();
+    private List<Component> components;
+    public Component(){
+      this.components = new ArrayList<>();
+    }
+    public void addComponent(Component c){
+      components.add(c);
+    }
     //...
 }
 ```
 
-### Paso 2
-Hacemos que cada producto concreto implemente la interface anterior y su respectivo método:
+### Paso 7
+Finalmente implementamos el **método público** que permita recorrer la lista de componentes invocando de nuevo al método *operation()* y así recursivamente hasta llegar a una hoja:
 ```java
-public class ConcreteProductA implements Product{
-    @Override
-    public String price(){
-      return new String("10€");
+public class Composite implements Component {
+    private List<Component> components;
+    public Component(){
+      this.components = new ArrayList<>();
     }
-}
-```
-```java
-public class ConcreteProductB implements Product{
-    @Override
-    public String price(){
-      return new String("5€");
+    public void addComponent(Component c){
+      components.add(c);
     }
-}
-```
-```java
-public class ConcreteProductC implements Product{
     @Override
-    public String price(){
-      return new String("20€");
+    public void operation(){
+      System.out.println("Composite operation");
+      for(Component c : components){
+        c.operation();
+      }
     }
 }
 ```
 
-> Factory.java
-
-### Paso 3
-Definimos una clase **pública y abstracta** llamada `Factory`:
-```java
-public abstract class Factory{
-    // ...
-}
-```
-
-### Paso 4
-Definimos un método **público y abstracto** llamado `factoryMethod()` y nos aseguramos que devuelva una instancia de la interface común `Product`:
-```java
-public abstract class Factory{
-    public abstract Product factoryMethod();
-}
-```
-
-> FactoryA.java
-
-> FactoryB.javA
-
-> FactoryC.java
-
-### Paso 5
-Para cada producto concreto creamos su respectiva factoría y que heredará de la `Factory` principal. Devolveremos una intancia de cada producto concreto, teniendo en cuenta que su tipo será el de la interface.
-```java
-public class FactoryA extends Factory{
-    @Override
-    public Product factoryMethod() {
-      return new ConcreteProductA();
-    }
-}
-```
-```java
-public class FactoryB extends Factory{
-    @Override
-    public Product factoryMethod() {
-      return new ConcreteProductB();
-    }
-}
-```
-```java
-public class FactoryC extends Factory{
-    @Override
-    public Product factoryMethod() {
-      return new ConcreteProductC();
-    }
-}
-```
 
 ## 1.3 - Utilización
 > Main.java
 ```java
 public class Main {
     public static void main(String[] args) {
-        Factory factory = new FactoryA();
-        Product productA = factory.factoryMethod();
+        Composite composite1 = new Composite();
+        Component leaf1 = new Leaf();
+        Component leaf2 = new Leaf();
+        Composite composite2 = new Composite();
+        Component leaf3 = new Leaf();
 
-        Factory factory = new FactoryB();
-        Product productB = factory.factoryMethod();
+        composite2.add(leaf3);
+        composite1.add(composite2);
+        composite1.add(leaf1);
+        composite1.add(leaf2);
 
-        Factory factory = new FactoryC();
-        Product productC = factory.factoryMethod();
+        composite1.print();
     }
 }
 ```
