@@ -19,12 +19,12 @@
 classDiagram
 
 
-class Component{
+class Observer{
     <<Interface>> 
-    +operation()
+    +update(Observable o, Object arg)
 }
 
-class Leaf{
+class Concrete Observer{
     +operation()
 }
 
