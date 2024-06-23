@@ -19,31 +19,36 @@
 classDiagram
 
 
+
+class  Observable{
+    +operation()
+    +addObserver(Observer o) void
+    +deleteObserver(Observer o) void
+    +deleteObservers() void
+    +countObservers() int
+    +notifyObservers() void
+    +notifyObservers(Object arg) void
+    #setChanged() void
+    #clearChanged() void
+    +hasChanged() boolean
+}
+
+
 class Observer{
     <<Interface>> 
-    +update(Observable o, Object arg)
+    +update(Observable o, Object arg) void
 }
 
-class Concrete Observer{
-    +operation()
-}
+Observable --> "*" Observer
 
-class Composite{
-    +operation()
-    +add()
-}
-
-Component <|.. Leaf
-Component <|.. Composite
-
-Composite --> "*" Component
-
+Observer <|-- `Concrete Observer`
+Observable <|-- `Concrete Observable`
 
 ```
 
 ## 1.2 - Explicación 
 
-> Component.java
+> Observable.java
 
 
 ### Paso 1
