@@ -20,26 +20,14 @@ classDiagram
 
 
 
-class  Observable{
-    +operation()
-    +addObserver(Observer o) void
-    +deleteObserver(Observer o) void
-    +deleteObservers() void
-    +countObservers() int
-    +notifyObservers() void
-    +notifyObservers(Object arg) void
-    #setChanged() void
-    #clearChanged() void
-    +hasChanged() boolean
-}
-
-
 class Observer{
     <<Interface>> 
     +update(Observable o, Object arg) void
 }
 
 Observable --> "*" Observer
+
+`Concrete Observable` <.. `Concrete Observer`
 
 Observer <|-- `Concrete Observer`
 Observable <|-- `Concrete Observable`
@@ -52,92 +40,106 @@ Observable <|-- `Concrete Observable`
 
 
 ### Paso 1
-Definimos  **interface pública** llamada 'Component' con su respectivo método:
+Es una clase que viene ya implementada en la paquete 'utils' de Java a partir de la versión 8. 
 ```java
-public interface Component {
-    void operation()
+public class Observable {
+  public void addObserver(Observer o) { ... }
+  public void deleteObserver(Observer o) { ... }
+  public void deleteObservers() { ... }
+  public int countObservers() { ... }
+
+  public void notifyObservers() { ... }
+  public void notifyObservers(Object arg) { ... }
+
+  protected void setChanged() { ... }
+  protected void clearChanged() { ... }
+  public boolean hasChanged() { ... }
 }
 ```
+Una breve explicación de cada método:
 
-> Leaf.java
+-  **public void addObserver(Observer o)**
+    - Agrega un observador al conjunto de observadores de este objeto, siempre y cuando el observador no esté ya en el conjunto.
+-  **public void deleteObserver(Observer o)**
+    - Elimina un observador especificado del conjunto de observadores.
+-  **public void deleteObservers()**
+    - Borra la lista de observadores.
+-  **public int countObservers()**
+    - Devuelve el número de observadores.
+-  **public void notifyObservers()**
+    -  Si este objeto ha cambiado, como lo indica el método, notifique a todos sus observadores.
+-  **public void notifyObservers(Object arg)**
+    - Si este objeto ha cambiado, como lo indica el método, notifique a todos sus observadores.
+-  **protected void setChanged()**
+    - Marca este objeto Observable como modificado; el método hasChanged ahora devolverá true.
+-  **protected void clearChanged()**
+    - Indica que este objeto ya no ha cambiado o que ha cambiado ya ha notificado a todos sus observadores su cambio más reciente, de modo que el método hasChanged ahora devolverá false.
+-  **public boolean hasChanged()**
+    - Comprueba si este objeto ha cambiado.
+
+> ConcreteObservable.java
 
 ### Paso 2
-Definimos la **clase pública** llamada 'Leaf' y hacemos que implemente la interface 'Component':
+Definimos la **clase pública** llamada 'ConcreteObservable' y hacemos que extienda la clase  'Observable' (todos los cambios que se hagas sobre este Observable tendrán que ser notificados a sus obseervadores):
 ```java
-public class Leaf implements Component {
+public class ConcreteObservable extends Observable {
     //...
 }
 ```
 
 ### Paso 3
-Sobrescribimos el **método público** a implementar:
+Definimos una variable que será observada y cuando esta cambie (generalmente en algún setter) se avisarán a los observadores, con el método *setChanged()* marcaremos que la variable ha cambiado y con el método *notifyObservers()* notificaremos a todos los observadores. 
 ```java
-public class Leaf implements Component {
-    @Override
-    public void operation(){
-      System.out.println("Leaf operation");
+public class ConcreteObservable extends Observable {
+    private int variableToObserve;
+
+    public void setVariableToObserve(int variableToObserve){
+      this.variableToObserve = variableToObserve;
+      setChanged();
+      notifyObservers();
     }
+    //...
 }
 ```
 
-> Composite.java
+> Observer.java
 
 ### Paso 4
-Definimos la **clase pública** llamada 'Composite' y hacemos que implemente la interface 'Component':
+Definimos la **interface** llamada 'Observer' y contendra un método llamado *update()*:
 ```java
-public class Composite implements Component {
-    //...
+public interface Observer{
+    void update(Observable o, Object arg);
+}
+```
+
+> ConcreteObserver.java
+
+### Paso 4
+Definimos la **clase pública** llamada 'ConcreteObserver' e implementará la interface 'Observer':
+```java
+public class ConcreteObserver interface Observer{
+    private int variableToObserve;
+     //...
 }
 ```
 
 ### Paso 5
-Como tenemos una multiplicidad indeterminada habrá que almacenar todas las intancias creadas de 'Component' en una lista:
+Implementamos el método **público y void** *update()* teniendo en cuenta que recibirá objeto Observable (nos tenemos que asegurar que sea una instancia de ConcreteObservable):
 ```java
-public class Composite implements Component {
-    private List<Component> components;
-    public Component(){
-      this.components = new ArrayList<>();
+public class ConcreteObserver interface Observer{
+  private int variableToObserve;
+  @Override
+  público void update(Observable o, Object arg){
+    if( o instanceof ConcreteObservable){
+      ConcreteObservable concreteObservable = (ConcreteObservable) o; //Casteamos el objeto a su específica clase Observable
+      this.variableToObserve = concreteObservable.getVariableToObserve(); //Obtenemos el valor modificado
+        System.out.println(variableToObserve);
     }
-    //...
+    }
+  }      
 }
 ```
 
-
-### Paso 6
-Implementamos un **método público** que permita añadir componentes al compuesto (pueden ser de la clase 'Composite' o 'Leaf':
-```java
-public class Composite implements Component {
-    private List<Component> components;
-    public Component(){
-      this.components = new ArrayList<>();
-    }
-    public void addComponent(Component c){
-      components.add(c);
-    }
-    //...
-}
-```
-
-### Paso 7
-Finalmente implementamos el **método público** que permita recorrer la lista de componentes invocando de nuevo al método *operation()* y así recursivamente hasta llegar a una hoja:
-```java
-public class Composite implements Component {
-    private List<Component> components;
-    public Component(){
-      this.components = new ArrayList<>();
-    }
-    public void addComponent(Component c){
-      components.add(c);
-    }
-    @Override
-    public void operation(){
-      System.out.println("Composite operation");
-      for(Component c : components){
-        c.operation();
-      }
-    }
-}
-```
 
 
 ## 1.3 - Utilización
@@ -145,18 +147,16 @@ public class Composite implements Component {
 ```java
 public class Main {
     public static void main(String[] args) {
-        Composite composite1 = new Composite();
-        Component leaf1 = new Leaf();
-        Component leaf2 = new Leaf();
-        Composite composite2 = new Composite();
-        Component leaf3 = new Leaf();
+        ConcreteObservable obs = new ConcreteObservable();
 
-        composite2.add(leaf3);
-        composite1.add(composite2);
-        composite1.add(leaf1);
-        composite1.add(leaf2);
+        ConcreteObserver o1 = new ConcreteObserver();
+        ConcreteObserver o2 = new ConcreteObserver();
 
-        composite1.print();
+        obs.addObserver(o1);
+        obs.addObserver(o2);
+
+        obs.setVariableToObserve(6);
+        
     }
 }
 ```
