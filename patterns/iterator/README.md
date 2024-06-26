@@ -50,98 +50,129 @@ Definimos la interface `Iterator<E>` de tipo génerica (<E>) y contendrá
 ```java
 public interface Iterator<E>{
   boolean hasNext(); 
-  public E next();
+  E next();
 }
 ```
 Una breve explicación de cada método:
 
 -  **boolean hasNext()**
     - Devuelve true si la siguiente iteración tiene más elementos.
--  **public E next())**
+-  **E next())**
     - Devuelve el siguiente elemento de la iteración.
 
 > IterableCollection.java
 
+### Paso 2
 Definimos la interface `IterableCollection<E>` de tipo génerica (<E>) y contendrá un método llamado *getIterator()* que devolverá una instancia del iterador. 
 
 ```java
 public interface IterableCollection<E>{
-  public Iterator<E> getIterator();
+  Iterator<E> getIterator();
 }
 ```
 
 > ConcreteIterator.java
 
-### Paso 2
+### Paso 3
 Definimos la **clase pública** llamada `ConcreteIterator`  y hacemos que implemente la interface `Iterator<E>`:
 ```java
-public class ConcreteIterator implements Iterator<E> {
+public class ConcreteIterator<E> implements Iterator<E> {
     //...
 }
 ```
 
-### Paso 3
-Definimos la **clase pública** llamada `ConcreteIterator`  y hacemos que implemente la interface `Iterator<E>`:
+### Paso 4
+Definimos una estructura de datos a recorrer mediante el iterador, crearemos instancia ArrayList **pública y final** y una variable entera auxiliar que nos ayude a indicar la posición actual en la lista:
 ```java
-public class ConcreteIterator implements Iterator<E> {
-    private LinkedList<E> list = new LinkedList<>();
-    //...
-}
-```
+public class ConcreteIterator<E> implements Iterator<E> {
+    private final ArrayList<E> a;
+    private int pos = 0;
 
-### Paso 3
-Definimos una variable que será observada y cuando esta cambie (generalmente en algún setter) se avisarán a los observadores, con el método *setChanged()* marcaremos que la variable ha cambiado y con el método *notifyObservers()* notificaremos a todos los observadores. 
-```java
-public class ConcreteObservable extends Observable {
-    private int variableToObserve;
-
-    public void setVariableToObserve(int variableToObserve){
-      this.variableToObserve = variableToObserve;
-      setChanged();
-      notifyObservers();
+    public ConcreteIterator(ArrayList<E> a){
+        this.a = a;
     }
+
     //...
 }
 ```
 
-> Observer.java
-
-### Paso 4
-Definimos la **interface** llamada 'Observer' y contendra un método llamado *update()*:
-```java
-public interface Observer{
-    void update(Observable o, Object arg);
-}
-```
-
-> ConcreteObserver.java
-
-### Paso 4
-Definimos la **clase pública** llamada 'ConcreteObserver' e implementará la interface 'Observer':
-```java
-public class ConcreteObserver interface Observer{
-    private int variableToObserve;
-     //...
-}
-```
 
 ### Paso 5
-Implementamos el método **público y void** *update()* teniendo en cuenta que recibirá objeto Observable (nos tenemos que asegurar que sea una instancia de ConcreteObservable):
+Definimos el método *hasNext()*; retornaremos true cuando la posicón sea menor al tamaño del array: 
+
 ```java
-public class ConcreteObserver interface Observer{
-  private int variableToObserve;
-  @Override
-  público void update(Observable o, Object arg){
-    if( o instanceof ConcreteObservable){
-      ConcreteObservable concreteObservable = (ConcreteObservable) o; //Casteamos el objeto a su específica clase Observable
-      this.variableToObserve = concreteObservable.getVariableToObserve(); //Obtenemos el valor modificado
-        System.out.println(variableToObserve);
+public class ConcreteIterator<E> implements Iterator<E> {
+    private final ArrayList<E> a;
+    private int pos = 0;
+
+    public ConcreteIterator(ArrayList<E> a){
+        this.a = a;
     }
+
+    @Override
+    public boolean hasNext(){
+      return pos < a.size();
     }
-  }      
+    //...
 }
 ```
 
+
+### Paso 6
+Definimos el método *next()*; retornaremos el valor valor de la siguiente posición: 
+```java
+public class ConcreteIterator<E> implements Iterator<E> {
+    private final ArrayList<E> a;
+    private int pos = 0;
+
+    public ConcreteIterator(ArrayList<E> a){
+        this.a = a;
+    }
+
+    @Override
+    public boolean hasNext(){
+      return pos < a.size();
+    }
+
+    @Override
+    public E next(){
+      if(!hasNext()) throw new NoSuchElementException(); 
+      return a.get(pos++);
+    }
+}
+```
+
+> IterableCollection.java
+
+### Paso 7
+Definimos la **clase pública** llamada 'IterableCollection' e implementará la interface 'IterableCollection':
+```java
+public class IterableCollection<E> interface IterableCollection<E>{
+  private final ArrayList<E> collection;
+
+  public IterableCollection (ArrayList<E> collection){
+    this.collection = collection;
+  }
+  // ...
+} 
+```
+
+### Paso 8
+Implementamos el método *getIterator()* y su función será retornar el iterador;
+```java
+public class IterableCollection<E> interface IterableCollection<E>{
+  private final ArrayList<E> collection;
+
+  public IterableCollection (ArrayList<E> collection){
+    this.collection = collection;
+  }
+  
+  @Override
+  public IterableCollection<E> getIterator(){
+    return new ConcreteIterator<>(collection);
+  } 
+} 
+```
 
 
 ## 1.3 - Utilización
@@ -149,16 +180,19 @@ public class ConcreteObserver interface Observer{
 ```java
 public class Main {
     public static void main(String[] args) {
-        ConcreteObservable obs = new ConcreteObservable();
+        ArrayList<String> c = new ArrayList<>();
 
-        ConcreteObserver o1 = new ConcreteObserver();
-        ConcreteObserver o2 = new ConcreteObserver();
+        a.add("e1");
+        a.add("e2");
+        a.add("e3");
 
-        obs.addObserver(o1);
-        obs.addObserver(o2);
+        IterableCollection<String> iterable = new IterableCollection<>(c);
+        Iterator<String> it = iterable.getIterator();
 
-        obs.setVariableToObserve(6);
-        
+        while(iterator.hasNext()) {
+          String element = iterator.next();
+          System.out.println(element);
+        } 
     }
 }
 ```
